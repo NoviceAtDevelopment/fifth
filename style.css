@@ -1,0 +1,597 @@
+
+/*--------------ContainerHeader---------*/
+.containerHeader{   
+    display: flex;
+    width: 100%;
+    background-color: black;    
+}    
+
+/*--------------ContainerHeaderLeft---------*/
+.containerHeaderLeft{
+    display: inline-flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 50%;  
+}
+/*--------------ContainerHeaderLeftLogo---------*/
+.containerHeaderLeftLogo{
+    display: inline-flex;
+    margin-left: 50px;
+    width: 15em;
+    justify-content: center;       
+}
+/*--------------ContainerHeaderLeftLogoImg---------*/
+.containerHeaderLeftLogo img{
+    max-width: 100%;
+    height: auto;     
+}
+
+/*--------------ContainerHeaderLeftName---------*/
+.containerHeaderLeftName{
+  display: inline-flex;
+   margin-left: 50px;
+   width: 20em;
+   height: 4.5em;
+   justify-content: center;
+   align-items: center;
+   background-color: seashell; 
+   
+}
+
+/*--------------ContainerHeaderLeftNameSpan---------*/
+.containerHeaderLeftName span{
+   padding: 20px;
+   background-color: black;
+   color: snow;
+   font-family:"Crimson Text";
+   width: 100%;
+   text-align: center;
+   font-size: 1.5vw;
+}
+
+/*--------------ContainerHeaderRight---------*/
+.containerHeaderRight{
+    display: inline-flex;
+    width: 50%;
+    justify-content:center;
+    align-items: center; 
+}
+
+/*--------------ContainerHeaderRightList---------*/
+.containerHeaderRightList{
+    display: inline-flex;
+    padding: 10px;
+    background-color: black;
+    width: 40%;      
+    justify-content: center;   
+}
+
+/*--------------ContainerHeaderRightSpans---------*/
+.containerHeaderRightList span{
+    color:snow;
+    margin: 10px;   
+    font-family:"Crimson Text";
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 1.2vw;
+    width: 100%;
+}
+    
+
+/*----------intro---------*/
+.intro{
+    display: block;
+    text-align: center;
+    font-family:"Crimson Text";
+    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
+    border: black solid 3px;
+}
+
+/*---------gibraltarBack----------*/
+.gibraltarBack{
+    background-color: black;
+    color: snow;
+    padding: 20px; 
+    
+}
+/*---------gibraltarText----------*/
+.gibraltarText{
+    color: snow;
+    font-family:"Crimson Text";
+    background-color: black;
+    font-size: 1.1vw;    
+    text-align: center;
+    padding: 15px;
+}
+.gibraltarPhoto{
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:10px ;
+    place-items: center;
+}
+.gibraltarPhoto img{
+    border: solid 2px snow;
+box-shadow: 5px 5px 5px white;
+}
+
+/*----------Biscay---------*/
+.biscay{
+    background-color: black;
+    color: snow;
+    font-family:"Crimson Text";
+    padding: 20px;
+    margin-top: 50px;
+}
+.biscayText{
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.biscayPhoto{
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap:10px ;
+  place-items: center;
+  
+}
+.biscayPhoto img{
+    border: solid 2px snow;
+box-shadow: 5px 5px 5px  white;
+}
+
+/*----------Final---------*/
+
+.final{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border: black 3px solid;
+    color: black;
+    font-family:"Crimson Text"; 
+}
+
+
+/*----------mediaqueries-----------------------mediaqueries----------------------------------*/
+
+@media only screen and (max-width: 369px) {
+    .html,
+    body{
+        margin: 0 auto;
+        padding: 0;
+        height: 100%;
+        max-width: 369px;
+    }   
+    .containerHeader{   
+        display: inline-flex;
+        width: 100%;
+        background-color: black;   
+        flex-direction: column;
+    }  
+
+    .containerHeaderLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;  
+        border-bottom:solid 2px snow ;
+    }
+    .containerHeaderLeftLogo{
+        display: none;
+        margin-left: 10px;         
+    }
+    
+    .containerHeaderLeftName span{
+        color: snow;
+        font-family:"Crimson Text";
+        font-size: 1.5em;
+        height:32px;
+        text-align: left;
+      
+     }
+     .containerHeaderRight{
+        display: flex;
+        width: 100%;        
+   }
+
+    .containerHeaderRightList{
+        display: inline-flex;
+        background-color: black;
+        width: 100%;                         
+    }
+
+    .containerHeaderRightList span{
+        color: white;
+        font-family:"Crimson Text";       
+        font-size: 1.5em;    
+    }
+
+    /*----------intro---------*/
+.intro{
+    display: block;
+    text-align: center;
+    font-family:"Crimson Text";
+    margin-top: 50px;
+    width: 90%;
+    border: black solid 3px;
+    font-size: 1.5em;
+}
+
+/*---------gibraltarText----------*/
+.gibraltarText{
+    color: snow;
+    font-family:"Crimson Text";
+    background-color: black;
+    font-size: 1.1em;    
+    text-align: center;
+    padding: 15px;
+}
+.gibraltarPhoto{
+    display: grid;   
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: auto;
+} 
+
+.gibraltarPhoto img{
+margin-bottom: 25px;
+border: solid 2px snow;
+box-shadow: 5px 5px grey;
+}
+/*---------Biscay----------*/
+
+.biscayText{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.biscayPhoto{
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: auto;
+    place-items: center;
+    
+  }
+  .biscayPhoto img{
+    border: solid 2px snow;
+    box-shadow: 5px 5px grey;
+    margin-bottom: 15px;
+  }
+  .final{
+    display: block;
+    text-align: center;
+    font-family:"Crimson Text";
+    margin-top: 50px;
+    width: 70%;
+    border: black solid 3px;
+    font-size: 1.5em;
+}
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+
+/*--------------ContainerHeader---------*/
+html,
+body{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    max-width: 768px;
+}
+
+.containerHeader{ 
+   display: flex;
+   flex-direction: column;
+   max-width: 100%;
+}    
+
+
+/*--------------ContainerHeaderLeft---------*/
+.containerHeaderLeft{    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid snow 2px;
+}
+/*--------------ContainerHeaderLeftLogo---------*/
+.containerHeaderLeftLogo{
+    display: inline-flex;
+    max-width: 50%;
+   
+}
+/*--------------ContainerHeaderLeftLogoImg---------*/
+.containerHeaderLeftLogo img{
+    max-width: 100%;
+    height: auto;  
+}
+
+/*--------------ContainerHeaderLeftName---------*/
+.containerHeaderLeftName{
+  display: inline-flex;
+    width: 505;
+   height:auto;
+   justify-content: center;
+   align-items: center;   
+}
+
+/*--------------ContainerHeaderLeftNameSpan---------*/
+.containerHeaderLeftName span{  
+   background-color: black;
+   color: snow;
+   font-family:"Crimson Text";
+   max-width: 100%;
+   text-align: center;
+   font-size: 3.5vw;
+}
+
+/*--------------ContainerHeaderRight---------*/
+.containerHeaderRight{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 5em;
+    justify-content: center;  
+    align-items: center; 
+}
+
+/*--------------ContainerHeaderRightList---------*/
+.containerHeaderRightList{
+    display: inline-flex;
+    background-color: black;  
+    justify-content: center;   
+}
+
+/*--------------ContainerHeaderRightSpans---------*/
+.containerHeaderRightList span{
+    color: snow;   
+    font-family:"Crimson Text";
+    flex-direction: row;
+    font-size: 1.5vw;   
+    height:auto; 
+    width: 100%;
+    
+   }
+
+   /*----------intro---------*/
+.intro{
+    display: block;
+    text-align: center;
+    font-family:"Crimson Text";
+    width: 90%;
+    margin: 50px auto;
+    border: black solid 3px;
+    font-size: 3.5vw;
+}
+/*---------gibraltarText----------*/
+.gibraltarText{
+    color: snow;
+    font-family:"Crimson Text";
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 3vw;
+}
+.gibraltarPhoto{    
+    max-width: 100%;
+} 
+
+.gibraltarPhoto img{    
+margin-bottom: 25px;
+border: solid 2px snow;
+box-shadow: 5px 5px grey;
+max-width: 100%;}
+
+/*----------Biscay---------*/
+.biscay{
+    background-color: black;
+    color: snow;
+    font-family:"Crimson Text";
+    padding: 20px;
+    margin-top: 50px;
+}
+.biscayText{
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.biscayPhoto{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center; 
+}
+.biscayPhoto img{
+    max-width: 600px;
+    border: solid 2px snow;
+    box-shadow: 5px 5px grey;
+}
+
+/*----------Final---------*/
+
+.final{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border: black 3px solid;
+    color: black;
+    font-family:"Crimson Text"; 
+    font-size: 3.5vw;
+}
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+
+
+/*--------------ContainerHeader---------*/
+.containerHeader{   
+    display: flex;
+    max-width: 100%;
+    background-color: black;    
+}    
+
+/*--------------ContainerHeaderLeft---------*/
+.containerHeaderLeft{
+    display: inline-flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 50%;  
+}
+/*--------------ContainerHeaderLeftLogo---------*/
+.containerHeaderLeftLogo{
+    display: inline-flex;
+    margin-left: 50px;
+    width: 15em;
+    justify-content: center;       
+}
+/*--------------ContainerHeaderLeftLogoImg---------*/
+.containerHeaderLeftLogo img{
+    max-width: 100%;
+    height: auto;     
+}
+
+/*--------------ContainerHeaderLeftName---------*/
+.containerHeaderLeftName{
+  display: inline-flex;
+   margin-left: 50px;
+   width: 20em;
+   height: 4.5em;
+   justify-content: center;
+   align-items: center;
+   background-color: black; 
+   
+}
+
+/*--------------ContainerHeaderLeftNameSpan---------*/
+.containerHeaderLeftName span{
+   padding: 20px;
+   background-color: black;
+   color: snow;
+   font-family:"Crimson Text";
+   width: 100%;
+   text-align: center;
+   font-size: 2.4vw;
+}
+
+/*--------------ContainerHeaderRight---------*/
+.containerHeaderRight{
+    display: inline-flex;
+    width: 50%;
+    justify-content:center;
+    align-items: center; 
+}
+
+/*--------------ContainerHeaderRightList---------*/
+.containerHeaderRightList{
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;      
+    justify-content: center;  
+    background-color: black; 
+    
+}
+
+/*--------------ContainerHeaderRightSpans---------*/
+.containerHeaderRightList span{
+    color: snow;
+    margin: 10px;   
+    font-family:"Crimson Text";
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 1.1vw;
+    background-color: black;
+    font-size: 2.4vw;
+    
+}
+    
+
+/*----------intro---------*/
+.intro{
+    display: block;
+    text-align: center;
+    font-family:"Crimson Text";
+    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
+    border: black solid 3px;
+    font-size: 2.4vw;
+}
+
+/*---------gibraltarBack----------*/
+.gibraltarBack{
+    background-color: black;
+    color: snow;
+    padding: 20px; 
+    
+}
+/*---------gibraltarText----------*/
+.gibraltarText{
+    color: snow;
+    font-family:"Crimson Text";
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 2.4vw;
+}
+.gibraltarPhoto{
+    display: flex;
+    width: 100%;     
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.gibraltarPhoto img{
+    box-shadow: 5px 5px 5px grey;
+    margin: 10px;
+    max-width: 100%;
+}
+
+/*----------Biscay---------*/
+.biscay{
+    background-color: black;
+    color: snow;
+    font-family:"Crimson Text";
+    padding: 20px;
+    margin-top: 50px;
+}
+.biscayText{
+    text-align: center;
+    font-size: 2.1vw;
+}
+
+.biscayPhoto{
+  display: flex ;
+  width: 100%;
+  column-gap:10px ;
+ justify-content: center;
+  
+}
+.biscayPhoto img{
+    box-shadow: 5px 5px 5px grey;
+    margin: 10px;
+    max-width: 100%;
+}
+
+/*----------Final---------*/
+
+.final{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border: black 3px solid;
+    color: black;
+    font-family:"Crimson Text"; 
+}
+
+}
